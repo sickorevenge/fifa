@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Quiz</title>
+      <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="FIFA Quiz Logo" class="logo-img">
+        </div>
+       <nav>
+            <ul>
+              
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="auth-section">
+            <h2>Авторизация</h2>
+            <form id="authForm" class="auth-form">
+                <div class="form-group">
+                    <label for="login">Логин:</label>
+                    <input type="text" id="login" name="login" required>
+                </div>
+                <div class="form-group">
+                    <label for="date_of_birth">Дата рождения:</label>
+                     <input type="date" id="date_of_birth" name="date_of_birth" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Пол:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Выберите пол</option>
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                 </div>
+                
+                <button type="submit" class="auth-btn">Войти</button>
+            </form>
+              <p id="error-message" class="error-message" style="display:none;">Неверный логин или дата рождения.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                 <h3>Контактные данные</h3>
+                    <p>Телефон: <a href="#">+7 (XXX) XXX-XX-XX</a></p>
+                     <div class="social-links">
+                        <a href="#">VK</a>
+                         <a href="#">Telegram</a>
+                     </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 FIFA </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Quiz</title>
+     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/test.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <img src="img/logo.png" alt="FIFA Quiz Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#description">Описание</a></li>
+                <li><a href="#dictionary">Словарь</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#test">Тест</a></li>
+                <li><a href="#profile">Личный кабинет</a></li>
+                <li><button id="logoutButton" class="logout-btn">Выйти</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="description">
+            <h2>Описание</h2>
+             <p>Добро пожаловать в FIFA – интерактивный ресурс для фанатов футбольной серии FIFA! Здесь вы можете проверить свои знания о разных аспектах игры.
+                 У нас есть словарь терминов, галерея запоминающихся моментов, а также тест на знание игры. Присоединяйтесь, узнавайте новое и станьте экспертом FIFA!</p>
+        </section>
+        <section id="dictionary">
+            <h2>Словарь</h2>
+            <div class="dictionary-container">
+                <ul id="dictionaryList" class="dictionary-list">
+                    <li>Финт Зидана</li>
+                    <li>Бисиклета</li>
+                    <li>Прокид</li>
+                    <li>Ложный замах</li>
+                    <li>Чип-удар</li>
+                    <li>Тики-Така</li>
+                    <li>Прессинг</li>
+                    <li>Свободный удар</li>
+                    <li>Офсайд</li>
+                    <li>Хэдшот</li>
+                </ul>
+                <div class="definition-container">
+                    <h3>Определение:</h3>
+                    <p id="definition">Выберите термин из списка.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active" style="background-image: url('img/slide1.jpg');">
+                        <p class="slide-caption">Эволюция обложек FIFA</p>
+                    </div>
+                    <div class="slide" style="background-image: url('img/slide2.jpg');">
+                        <p class="slide-caption">Эволюция графики FIFA</p>
+                     </div>
+                    <div class="slide" style="background-image: url('img/slide3.jpg');">
+                       <p class="slide-caption">Состав команды в FUT</p>
+                     </div>
+                     <div class="slide" style="background-image: url('img/slide4.jpg');">
+                        <p class="slide-caption">FIFA в мире киберспорта</p>
+                      </div>
+                    <div class="slide" style="background-image: url('img/slide5.jpg');">
+                         <p class="slide-caption">Мем</p>
+                     </div>
+                </div>
+                <div class="slider-controls">
+                   <button id="prevSlide" class="slider-button prev">Предыдущий</button>
+                    <span id="slideNumber" class="slide-number">1 из 5</span>
+                    <button id="nextSlide" class="slider-button next">Следующий</button>
+                </div>
+            </div>
+        </section>
+        <section id="test">
+            <h2>Тест</h2>
+             <form id="quizForm" class="quiz-form">
+                <div class="quiz-question">
+                    <p>Вопрос 1: Что такое "Финт Зидана"?</p>
+                    <input type="radio" name="question1" value="option1"> Обманное движение корпусом<br>
+                    <input type="radio" name="question1" value="option2">  Разворот на 360 градусов, используя подошву стопы для защиты мяча.<br>
+                    <input type="radio" name="question1" value="option3"> Удар через себя, в прыжке.<br>
+                </div>
+                  <div class="quiz-question">
+                    <p>Вопрос 2: Сколько игроков в футбольной команде?</p>
+                    <input type="radio" name="question2" value="option1"> 5<br>
+                    <input type="radio" name="question2" value="option2"> 8<br>
+                    <input type="radio" name="question2" value="option3"> 11<br>
+                </div>
+                 <div class="quiz-question">
+                    <p>Вопрос 3: Кто является самым дорогим футболистом в FIFA на данный момент?</p>
+                    <input type="radio" name="question3" value="option1"> Неймар<br>
+                    <input type="radio" name="question3" value="option2"> Холланд<br>
+                    <input type="radio" name="question3" value="option3"> Роналду<br>
+                </div>
+                  <div class="quiz-question">
+                    <p>Вопрос 4: Что такое "бисиклета"?</p>
+                    <input type="radio" name="question4" value="option1"> Выход вратаря из ворот для перехвата мяча.<br>
+                    <input type="radio" name="question4" value="option2"> Удар по мячу в падении, когда игрок бьет по мячу ногой, находясь в воздухе спиной к воротам.<br>
+                    <input type="radio" name="question4" value="option3"> Финт, при котором игрок разворачивается на 360 градусов с мячом.<br>
+                </div>
+                 <div class="quiz-question">
+                    <p>Вопрос 5: Кто изображен на обложке FIFA 18?</p>
+                    <input type="radio" name="question5" value="option1"> Роналду<br>
+                     <input type="radio" name="question5" value="option2"> Месси<br>
+                    <input type="radio" name="question5" value="option3"> Мбаппе<br>
+                </div>
+                 <button type="submit" class="test-btn">Проверить</button>
+                 <button type="button" id="resetButton" class="reset-btn">Пройти заново</button>
+                 <div id="result" class="quiz-result" style="display:none;">
+                       <h3>Результат теста:</h3>
+                       <p id="score"></p>
+                      <div id="correctAnswers" class="correct-answers"></div>
+                </div>
+             </form>
+        </section>
+         <section id="profile">
+            <h2>Личный кабинет</h2>
+            <div id="user-info">
+               <p>Логин: <span id="profile-login"></span></p>
+                <p>Дата рождения: <span id="profile-date"></span></p>
+                 <p>Пол: <span id="profile-gender"></span></p>
+                <p>Последний результат теста: <span id="profile-score"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+         <div class="footer-content">
+            <div class="contact-info">
+                 <h3>Контактные данные</h3>
+                    <p>Телефон: <a href="#">+7 (XXX) XXX-XX-XX</a></p>
+                     <div class="social-links">
+                        <a href="#">VK</a>
+                         <a href="#">Telegram</a>
+                     </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 FIFA </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
